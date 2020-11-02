@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Oregon Subiee Bois</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./animations.css">
+		<link rel="stylesheet" href="./Shared.css">
+		<link rel="stylesheet" href="./one_page_website.css">
+		<script src="./JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+
+		<!--NAV-->
+		<div>
+			<div class="Navbar">
+				
+					<a href="#home" id="link">Home</a>
+					<a href="#gallery" id="link">Gallery</a>
+					<a href="#brandons build" id="link">Brandons Build</a>
+				
+			</div>
+		</div>
+	<!--End nav-->
+	
+	<!--Home-->
+	<div id="home">
+		<div>
+			<div>
+				<h1 id="subie">Oregon Subiee Bois</h1>
+			</div>
+		</div>
+	</div>
+	<!--End home-->
+	
+	<!--Gallery-->
+	<section>
+		<div id="gallery">
+			<h1>Gallery</h1>
+			<div class= "flex-container">
+			
+				<!--Photo-Container 1 -->
+				<div class="photo-container">
+					<div class= "photo" onclick="openModal();currentSlide(1)" class="hover-shadow" >
+						<img src="./images/thumb/thumbnail_1.png" alt="Black subaru">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to enlarge</h3>
+							<p>Travis Pastranahas new racecar</p>
+						</div>
+					</div>
+				</div>
+				<!---End photo container 1-->
+				
+				<!--Photo-Container 2 -->
+				<div class="photo-container">
+					<div class= "photo" onclick="openModal();currentSlide(2)" class="hover-shadow">
+						<img src="./images/thumb/thumbnail_2.png" alt="White subaru">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to enlarge</h3>
+							<p>White STI hatchback</p>
+						</div>
+					</div>
+				</div>
+				<!---End photo container 2-->
+				
+				<!--Photo-Container 3 -->
+				<div class="photo-container">
+					<div class= "photo" onclick="openModal();currentSlide(3)" class="hover-shadow">
+						<img src="./images/thumb/thumbnail_3.png" alt="Ornge subaru with a built engine">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to enlarge</h3>
+							<p>STI engine bay</p>
+						</div>
+					</div>
+				</div>
+				<!---End photo container 3-->
+				
+				<!--Photo-Container 4 -->
+				<div class="photo-container">
+					<div class= "photo"onclick="openModal();currentSlide(4)" class="hover-shadow">
+						<img src="./images/thumb/thumbnail_4.png" alt="Blue subaru with nice rims">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to enlarge</h3>
+							<p>Blue STI hatchback</p>
+						</div>
+					</div>
+				</div>
+				<!---End photo container 4-->
+				
+				<!--Photo Container 5 -->
+				<div class="photo-container">
+					<div class= "photo"onclick="openModal();currentSlide(5)" class="hover-shadow">
+						<img src="./images/thumb/thumbnail_5.png" alt="Red subaru">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to enlarge</h3>
+							<p>My Red Wrx</p>
+						</div>
+					</div>
+				</div>
+				<!---End photo container 5-->
+				
+				<!--Photo-Container 6 -->
+				<div class="photo-container">
+					<div class= "photo" onclick="openModal();currentSlide(6)" class="hover-shadow">
+						<img src="./images/thumb/thumbnail_6.png" alt="Red subaru getting a bath">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to enlarge</h3>
+							<p>My red subie getting a bath</p>
+						</div>
+					</div>
+				</div>
+				<!---End photo container 6-->
+				
+				<!--Photo-Container 7 -->
+				<div class="photo-container">
+					<div class= "photo"onclick="openModal();currentSlide(7)" class="hover-shadow">
+						<img src="./images/thumb/thumbnail_7.png" alt="Red subaru in the sunset">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to enlarge</h3>
+							<p>My Wrx at the lake in the sunset</p>
+						</div>
+					</div>
+				</div>
+				<!---End photo container 7-->
+				
+				<!--Photo-Container 8 -->
+				<div class="photo-container">
+					<div class= "photo" onclick="openModal();currentSlide(8)" class="hover-shadow">
+						<img src="./images/thumb/thumbnail_8.png" alt="Red subaru in the forest">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to enlarge</h3>
+							<p>My Wrx in the forst on a random bridge</p>
+						</div>
+					</div>
+				</div>
+				<!---End photo container 8-->
+				
+				<!--Photo-Container 9 -->
+				<div class="photo-container">
+					<div class= "photo" onclick="openModal();currentSlide(9)" class="hover-shadow">
+						<img src="./images/thumb/thumbnail_9.png"alt="Built EJ207">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click to enlarge</h3>
+							<p>Built EJ207 STI motor</p>
+						</div>
+					</div>
+				</div> <!--Model-->
+				  </div>
+				<!---End photo container 9-->
+			</div>
+		</div>
+		<iframe width="910" height="512" src="https://www.youtube.com/embed/M8DhuxDnx0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+	<!--End Gallery-->
+	<!--Photo modal-->
+	<div id="myModal" class="modal" style="display: block;">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 9</div>
+            <img src="./Images/Thumb/thumbnail_1.png" style="100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 9</div>
+            <img src="./Images/Thumb/thumbnail_2.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 9</div>
+            <img src="./Images/Thumb/thumbnail_3.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 9</div>
+            <img src="./Images/Thumb/thumbnail_4.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 9</div>
+            <img src="./Images/Thumb/thumbnail_5.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 9</div>
+            <img src="./Images/Thumb/thumbnail_6.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 9</div>
+            <img src="./Images/Thumb/thumbnail_7.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / 9</div>
+            <img src="./Images/Thumb/thumbnail_8.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">9 / 9</div>
+            <img src="./Images/Thumb/thumbnail_9.png" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+      
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumb/thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="Travis Pastranahas new racecar">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumb/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="White STI hatchback">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumb/thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="STI engine bay">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumb/thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="Blue STI hatchback">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumb/thumbnail_5.png" style="width:100%" onclick="currentSlide(5)" alt="My Red Wrx">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumb/thumbnail_6.png" style="width:100%" onclick="currentSlide(6)" alt="My red subie getting a bath">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumb/thumbnail_7.png" style="width:100%" onclick="currentSlide(7)" alt="My Wrx at the lake in the sunset">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumb/thumbnail_8.png" style="width:100%" onclick="currentSlide(8)" alt="My Wrx in the forst on a random bridge">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Images/Thumb/thumbnail_9.png" style="width:100%" onclick="currentSlide(9)" alt="Built EJ207 STI motor">
+          </div>
+        </div>
+      </div>
+	<!--Brandons buld-->
+	<section>
+		<div id="brandons build">
+			<div>
+				<h1>Brandons Build</h1>
+				<div>
+					<h2><span>The Goal of this build is for around 600 HorsePower </span>
+						<br /> Watch me though my journey and give me some feed back and some tips! I can also ansewer questions.
+						</h2>
+						<p>
+						If you have any questions about my build please fill this out and I can get in contact with you.
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="reservation" type="text" value="First Name">
+								<input class="reservation" type="text" value="LastName">
+								<input class="reservation" type="text" value="Email Adress">
+								<input class="reservation" type="text" value="Phone Number">
+								<div class ="reservation">
+									<label class="Terms">Terms and conditions. </label>
+								</div>
+								<div>
+									<input type="Submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Brandons Build-->
+		
+		<!--Footer-->
+		<div> 
+			</div>
+	
+	</body>
+</html>
